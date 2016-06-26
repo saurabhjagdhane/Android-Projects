@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.saurabh.project.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@raw/abc">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEATHER"
+        android:id="@+id/b1"
+        android:layout_below="@+id/ExpectedCalorie"
+        android:layout_alignLeft="@+id/NextButton"
+        android:layout_alignStart="@+id/NextButton"
+        android:layout_marginTop="31dp" />
+
+    Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUTRITION"
+        android:id="@+id/button_nutrition_chart"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Weight:"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/MyWeight"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Height:"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/ExpectedCalorie"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BMI"
+            android:id="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/BmiButton"
+            android:layout_below="@+id/b1"
+            android:textSize="30dp" />
+
+        <RadioGroup
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGrp"
+            android:weightSum="1"
+            android:layout_alignWithParentIfMissing="false"
+            android:gravity="center|center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/BmiButton"
+            android:layout_toEndOf="@+id/BmiButton">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radio_male"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radio_female"
+                android:checked="false" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI"
+            android:id="@+id/BmiButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="46dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Age:"
+            android:id="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/MyHeight" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MyAge"
+            android:hint="Age in years"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignRight="@+id/MyBmi"
+            android:layout_alignEnd="@+id/MyBmi"
+            android:layout_alignLeft="@+id/MyWeight"
+            android:layout_alignStart="@+id/MyWeight" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MyWeight"
+            android:hint="Weight in kgs"
+            android:layout_above="@+id/MyAge"
+            android:layout_alignRight="@+id/MyBmi"
+            android:layout_alignEnd="@+id/MyBmi"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MyHeight"
+            android:hint="Height in meters"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/MyAge"
+            android:layout_alignEnd="@+id/MyAge"
+            android:layout_alignLeft="@+id/MyAge"
+            android:layout_alignStart="@+id/MyAge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/MyBmi"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_alignTop="@+id/textView3"
+            android:textColor="#dc4c4c"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExpectedCalorie"
+            android:hint="Range 0 - 9000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/NextButton"
+            android:layout_toEndOf="@+id/NextButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Exp calorie burn:"
+            android:id="@+id/textView5"
+            android:layout_alignBottom="@+id/ExpectedCalorie"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name:"
+            android:id="@+id/textview6"
+            android:layout_alignTop="@+id/MyName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MyName"
+            android:hint="your name"
+            android:layout_alignRight="@+id/MyWeight"
+            android:layout_alignEnd="@+id/MyWeight"
+            android:layout_above="@+id/MyWeight"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM//+"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:id="@+id/NextButton"
+            android:layout_alignTop="@+id/BmiButton"
+            android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

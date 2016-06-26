@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_secondpage">secondpage</string>
+    <string name="tempearature">Temperature</string>
+    <string name="condition">Condition</string>
+    <string name="location">Location</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="title_activity_nutrient_chart">NutrientChart</string>
+    <string name="title_activity_share_text">ShareTextActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_my_run">MyRun</string>
+    <string name="title_activity_pushups">Pushups</string>
+    <string name="title_activity_my_settings">MySettings</string>
+    <string name="title_activity_bar_graph">BarGraph</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Accelerometer</string>
+    <string name="action_settings">Settings</string>
+    <string name="PatientAge">Age</string>
+    <string name="PatientID">ID</string>
+    <string name="PatientName">Patient Name</string>
+    <string name="optionMale">Male</string>
+    <string name="optionFemale">Female</string>
+    <string name="StartButton">RUN</string>
+    <string name="StopButton">STOP</string>
+    <string name="UploadButton">UPLOAD</string>
+    <string name="DownloadButton">DOWNLOAD</string>
+    <string name="RadioFemale">Female</string>
+    <string name="RadioMale">Male</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

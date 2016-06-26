@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saurabh.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".GlobalState"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".secondpage"
+            android:label="@string/title_activity_secondpage"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".AlarmActivity"
+            android:label="@string/title_activity_alarm"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".Alarm_Receiver" />
+
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".NutrientChart"
+            android:label="@string/title_activity_nutrient_chart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShareTextActivity"
+            android:label="@string/title_activity_share_text"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".service.MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".service.MyRun"
+            android:label="@string/title_activity_my_run"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".service.Pushups"
+            android:label="@string/title_activity_pushups"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyRun"
+            android:label="@string/title_activity_my_run"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pushups"
+            android:label="@string/title_activity_pushups"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MySettings"
+            android:label="@string/title_activity_my_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".BarGraph"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_bar_graph"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
